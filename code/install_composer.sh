@@ -5,5 +5,15 @@ curl -Lso- https://getcomposer.org/installer | php -- --install-dir=~/.composer/
 
 export PATH=$PATH:~/.composer/vendor/bin
 
-# install phalcon devtools
+# install phalcon devtools globally
 composer global require phalcon/devtools
+
+# install phpunit globally
+composer global require phpunit/phpunit:^9.0
+
+if [ -d store ]; then
+		cd store
+
+		# install phalcon migrations
+		composer require --dev phalcon/migrations
+fi
