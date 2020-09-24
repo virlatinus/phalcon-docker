@@ -16,4 +16,8 @@ if [ -d store ]; then
 
 		# install phalcon migrations
 		composer require --dev phalcon/migrations
+    
+		composer require --dev phpunit/phpunit:^9.0
+
+		composer require --dev phalcon/incubator-test:^v1.0.0-alpha.1
 fi
