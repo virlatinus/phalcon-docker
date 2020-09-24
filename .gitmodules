@@ -1,0 +1,3 @@
+[submodule "code/store"]
+	path = code/store
+	url = git@github.com:wgxo/phalcon-store-project.git
