@@ -3,13 +3,10 @@
 # download and install composer in global composer dir
 curl -Lso- https://getcomposer.org/installer | php -- --install-dir=~/.composer/vendor/bin --filename=composer
 
-export PATH=$PATH:~/.composer/vendor/bin
+export PATH=$PATH:~/.composer/vendor/bin:./vendor/bin
 
 # install phalcon devtools globally
 composer global require phalcon/devtools
-
-# install phpunit globally
-composer global require phpunit/phpunit:^9.0
 
 if [ -d store ]; then
 		cd store
