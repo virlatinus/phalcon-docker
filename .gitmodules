@@ -1,3 +1,18 @@
 [submodule "code/store"]
 	path = code/store
 	url = git@github.com:wgxo/phalcon-store-project.git
+[submodule "code/incubator"]
+	path = code/incubator
+	url = https://github.com/phalcon/incubator.git
+[submodule "code/invo"]
+	path = code/invo
+	url = git@github.com:phalcon/invo.git
+[submodule "code/mvc"]
+	path = code/mvc
+	url = git@github.com:phalcon/mvc.git
+[submodule "code/rest-api"]
+	path = code/rest-api
+	url = https://github.com/phalcon/rest-api
+[submodule "code/vokuro"]
+	path = code/vokuro
+	url = https://github.com/phalcon/vokuro

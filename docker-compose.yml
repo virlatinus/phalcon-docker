@@ -22,6 +22,8 @@ services:
     image: phalcon4:latest
     environment:
       - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.composer/vendor/bin:./vendor/bin"
+      - "PHP_IDE_CONFIG=serverName=default"
+      - "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=192.168.108.128 remote_auto_start=1 remote_enable=1 profiler_enable_trigger=1 profiler_output_dir=/usr/src/app/profiling"
 
   nginx:
     container_name: nginx
