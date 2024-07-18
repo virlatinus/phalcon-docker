@@ -1,6 +1,6 @@
 [submodule "code/store"]
 	path = code/store
-	url = git@github.com:wgxo/phalcon-store-project.git
+	url = git@github.com:virlatinus/phalcon-store-project.git
 [submodule "code/incubator"]
 	path = code/incubator
 	url = https://github.com/phalcon/incubator.git
