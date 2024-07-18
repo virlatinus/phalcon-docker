@@ -1,13 +1,13 @@
 version: "3.0"
 
 services:
-  mysql:
-    container_name: mysql
-    ports:
-      - 3306:3306
-    environment:
-      - "MYSQL_ALLOW_EMPTY_PASSWORD=true"
-    image: mysql:5.7
+#  mysql:
+#    container_name: mysql
+#    ports:
+#      - 3306:3306
+#    environment:
+#      - "MYSQL_ALLOW_EMPTY_PASSWORD=true"
+#    image: mysql:latest
 
   phalcon:
     container_name: phalcon
@@ -19,7 +19,7 @@ services:
       - 9000
       - 8080:8080
     build: .
-    image: phalcon4:latest
+    image: phalcon-app:latest
     environment:
       - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.composer/vendor/bin:./vendor/bin"
       - "PHP_IDE_CONFIG=serverName=default"
@@ -32,6 +32,6 @@ services:
       - ./nginx:/etc/nginx/conf.d
       - ./code:/usr/src/app
     ports:
-      - 80:80
+      - 8088:80
     links:
       - phalcon
